@@ -6,7 +6,7 @@ public class FirstGitApp {
         System.out.println("First commit and push to github");
 
         //int i_var = 40;
-        
+
         System.out.println("New line for changing");
     }
 }
