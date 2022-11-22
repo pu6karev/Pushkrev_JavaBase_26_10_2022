@@ -14,7 +14,7 @@ public class CheckChar {
 
 
 
-       
+
 
         String sSymbMinuteUC = "\u0027";
 
