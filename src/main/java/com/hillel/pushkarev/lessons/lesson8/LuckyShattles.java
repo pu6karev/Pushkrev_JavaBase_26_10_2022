@@ -17,7 +17,7 @@ public class LuckyShattles {
             }
 
             System.out.println("Кораблю присвоен счастливый номер " + i);
-            
+
         }
     }
 }
