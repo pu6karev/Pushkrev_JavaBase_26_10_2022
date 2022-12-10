@@ -21,13 +21,13 @@ public class Rugby {
         // --- выводим возраст игроков первой команды
         System.out.print("Возраст команды №1: ");
         for (int i = 0; i < team1.length; i++) {
-            System.out.print(team1[i] + ((i != team1.length-1)? ", ":"\n"));
+            System.out.print(team1[i] + ((i != team1.length-1)? ", ":".\n"));
         }
 
         // --- выводим возраст игроков второй команды
         System.out.print("Возраст команды №2: ");
         for (int i = 0; i < team2.length; i++) {
-            System.out.print(team2[i] + ((i != team2.length-1)? ", ":"\n"));
+            System.out.print(team2[i] + ((i != team2.length-1)? ", ":".\n"));
         }
 
         // --- выводим средний возраст игроков первой команды
