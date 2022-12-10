@@ -8,16 +8,17 @@ public class LuckyShattles {
         int unlucky1 = 4;
         int unlucky2 = 9;
 
-        for (int i = 1; i <= 2147483647; i++) {
+        for (int i = 1; ; i++) {
 
             int numbForCheck = i;
-            int lastDigit = 0;
+            boolean isFoundUnluck = false;
 
             // --- проверяем ост. от деления, потом отсекаем последнюю цифру и в новом числе снова проверка ост.деления
             while (numbForCheck > 1){
-                lastDigit = numbForCheck % 10;
+                int lastDigit = numbForCheck % 10;
                 // --- если число содержит в себе несчастливую цифру, прерываем цикл
-                if(lastDigit == unlucky1 || lastDigit == unlucky2){
+                isFoundUnluck = (lastDigit == unlucky1 || lastDigit == unlucky2);
+                if(isFoundUnluck){
                     break;
                 }
                 // пока > 10, делим на 10, чтобы откинуть последнюю цифру и на след.итерации, проверим ост.от деления
@@ -25,7 +26,7 @@ public class LuckyShattles {
             }
 
             // --- если в цикле while() было обнаружено несчастливое число, вернемся к началу цикла for()
-            if(lastDigit == unlucky1 || lastDigit == unlucky2) {
+            if(isFoundUnluck) {
                 continue;
             }
 
