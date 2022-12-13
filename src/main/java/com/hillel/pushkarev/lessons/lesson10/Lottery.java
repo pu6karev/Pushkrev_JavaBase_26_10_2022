@@ -28,7 +28,7 @@ public class Lottery {
         System.out.println(Arrays.toString(arrCompany));
         System.out.println(Arrays.toString(arrPlayer));
 
-        // --- проверим совпавшие значения и соберем индексы совпадения в отдельный массив
+        // --- проверим совпавшие значения
         for (int i = 0; i < arrCompany.length; i++) {
             if (arrCompany[i] == arrPlayer[i]) {
                 nCoinc++;
