@@ -60,14 +60,6 @@ public class ArrayMN {
             }
         }
 
-//        // --- вывод в консоль транспонированного массива
-//        for (int i = 0; i < arrTrans.length; i++) {
-//            for (int j = 0; j < arrTrans[i].length; j++) {
-//                System.out.print(arrTrans[i][j] + "\t");
-//            }
-//            System.out.println();
-//        }
-
         // --- вывод в консоль транспонированного массива
         for (int[] row : arrTrans) {
             for (int cell : row) {
