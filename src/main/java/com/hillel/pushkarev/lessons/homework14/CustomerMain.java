@@ -19,10 +19,15 @@ public class CustomerMain {
     galina.printAccountInfo();
 
     // --- увеличение нагрузки с 6000 шагов на 8000 шагов
+    System.out.println("У клиента по имени " + peter.getName() + " раньше была нагрузка = " + peter.getStepNumber());
+
     peter.setStepNumber(8000);
     peter.printAccountInfo();
 
     // --- похудела и вышла замуж, сменив фамилию
+    System.out.println("У клиента по имени " + galina.getName()  + " раньше была фамилия " + galina.getSurname() +
+            ", а вес был " + galina.getWeight() + " кг.");
+
     galina.setWeight(73);
     galina.setSurname("Незабарова");
     galina.printAccountInfo();
