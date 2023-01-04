@@ -9,6 +9,7 @@ public class Main {
         android.call();
         android.sms();
         android.internet();
+        System.out.println();
 
         Iphone iphone = new Iphone("iPhone 10S", 6.7);
 
