@@ -15,7 +15,7 @@ public class Customer {
     private int     stepNumber;
 
     private  int age;
-    private  int curYear = 2020;
+    final int YEAR_COUNTDOWN = 2020;
 
     // --- Конструктор ---
     public Customer(String name, String surname, int birthday, int birthMonth, int birthYear, String email, String phone,
@@ -31,7 +31,7 @@ public class Customer {
         this.pressure = pressure;
         this.stepNumber = stepNumber;
 
-        age = curYear - birthYear;
+        age = YEAR_COUNTDOWN - birthYear;
     }
 
     // --- Геттеры ---
